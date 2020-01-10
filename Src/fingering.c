@@ -23,33 +23,33 @@ uint8_t note_now, note_last;
 extern int btn_flag;
 
 /* Declaración de combinaciones de notas */
-int cl_a3[17] 	= 	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1};
-int cl_bb3[17]	= 	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1};
-int cl_b3[17] 	= 	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1};
-int cl_c3[17] 	=	{0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1};
-int cl_db3[17] 	= 	{0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1};
-int cl_d3[17] 	= 	{0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1};
-int cl_eb3[17] 	= 	{0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1};
-int cl_e3[17] 	= 	{0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1};
-int cl_f3[17] 	= 	{0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1};
-int cl_gb3[17] 	= 	{0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1};
-int cl_g3[17] 	= 	{0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1};
-int cl_ab3[17] 	= 	{0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1};
-int cl_a4[17] 	= 	{0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1};
-int cl_bb4[17] 	= 	{0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1};
-int cl_b4[17] 	= 	{0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1};
-int cl_c4[17] 	= 	{0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1};
-int cl_db4[17] 	= 	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1};
-int cl_d4[17] 	= 	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1};
-int cl_eb4[17] 	= 	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1};
-int cl_e4[17] 	= 	{0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1};
-int cl_f4[17] 	= 	{0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1};
-int cl_gb4[17] 	= 	{0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1};
-
-int cl_g4[17] 	= 	{1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-int cl_ab4[17] 	= 	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-int cl_a5[17] 	= 	{0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-int cl_bb5[17] 	= 	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+				/*	 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16									*/
+int cl_a3[17] 	= 	{0,1,0,1,0,1,1,0,0,0, 0, 1, 1, 0, 0, 0, 0};
+int cl_bb3[17]	= 	{0,1,0,1,0,1,1,0,0,0, 0, 1, 0, 0, 0, 0, 0};
+int cl_b3[17] 	= 	{0,1,0,1,0,1,1,0,0,0, 0, 0, 1, 0, 1, 0, 0};
+int cl_c3[17] 	=	{0,1,0,1,0,1,1,0,0,0, 0, 0, 0, 0, 0, 0, 0};
+int cl_db3[17] 	= 	{0,1,0,1,0,1,1,1,0,0, 0, 0, 0, 0, 0, 0, 0};
+int cl_d3[17] 	= 	{0,1,0,1,0,1,0,0,0,0, 0, 0, 0, 0, 0, 0, 0};
+int cl_eb3[17] 	= 	{0,1,0,1,1,1,0,0,0,0, 0, 0, 0, 0, 0, 0, 0};
+int cl_e3[17] 	= 	{0,1,0,1,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0};
+int cl_f3[17] 	= 	{0,1,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0};
+int cl_gb3[17] 	= 	{0,1,0,0,0,0,0,0,1,0, 0, 0, 0, 0, 0, 0, 0};
+int cl_g3[17] 	= 	{0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0};
+int cl_ab3[17] 	= 	{0,0,0,0,1,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0};
+int cl_a4[17] 	= 	{0,0,1,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0};
+int cl_bb4[17] 	= 	{1,0,1,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0};
+int cl_b4[17] 	= 	{1,1,0,1,0,1,1,0,0,1, 0, 1, 1, 0, 1, 0, 1};
+int cl_c4[17] 	= 	{1,1,0,1,0,1,1,0,0,0, 0, 1, 1, 0, 1, 0, 1};
+int cl_db4[17] 	= 	{1,1,0,1,0,1,1,0,0,0, 1, 1, 1, 0, 1, 0, 1};
+int cl_d4[17] 	= 	{1,1,0,1,0,1,1,0,0,0, 0, 1, 1, 0, 1, 0, 0};
+int cl_eb4[17] 	= 	{1,1,0,1,0,1,1,0,0,0, 0, 1, 1, 0, 1, 1, 0};
+int cl_e4[17] 	= 	{1,1,0,1,0,1,1,0,0,0, 0, 1, 1, 0, 0, 0, 0};
+int cl_f4[17] 	= 	{1,1,0,1,0,1,1,0,0,0, 0, 1, 0, 0, 0, 0, 0};
+int cl_gb4[17] 	= 	{1,1,0,1,0,1,1,0,0,0, 0, 1, 0, 1, 0, 0, 0};
+int cl_g4[17] 	= 	{1,1,0,1,0,1,1,0,0,0, 0, 0, 0, 0, 0, 0, 0};
+int cl_ab4[17] 	= 	{1,1,0,1,0,1,1,1,0,0, 0, 0, 0, 0, 0, 0, 0};
+int cl_a5[17] 	= 	{1,1,0,1,0,1,0,0,0,0, 0, 0, 0, 0, 0, 0, 0};
+int cl_bb5[17] 	= 	{1,1,0,1,1,1,0,0,0,0, 0, 0, 0, 0, 0, 0, 0};
 
 
 /* Funciones de entrada */
@@ -61,23 +61,23 @@ int timeout_btn (fsm_t* this){
 void read_btn(fsm_t* this){
 	timeout_fingering += 25/portTICK_RATE_MS;
 
-	button_now[0] = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_1);
-	button_now[1] = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_2);
-	button_now[2] = 0;
-	button_now[3] = 0;
-	button_now[4] = 0;
-	button_now[5] = 0;
-	button_now[6] = 0;
-	button_now[7] = 0;
-	button_now[8] = 0;
-	button_now[9] = 0;
-	button_now[10] = 0;
-	button_now[11] = 0;
-	button_now[12] = 0;
-	button_now[13] = 0;
-	button_now[14] = 0;
-	button_now[15] = 0;
-	button_now[16] = 0;
+	button_now[0] = HAL_GPIO_ReadPin(btn_1_GPIO_Port, btn_1_Pin);
+	button_now[1] = HAL_GPIO_ReadPin(btn_2_GPIO_Port, btn_2_Pin);
+	button_now[2] = HAL_GPIO_ReadPin(btn_3_GPIO_Port, btn_3_Pin);
+	button_now[3] = HAL_GPIO_ReadPin(btn_4_GPIO_Port, btn_4_Pin);
+	button_now[4] = HAL_GPIO_ReadPin(btn5_GPIO_Port, btn5_Pin);
+	button_now[5] = HAL_GPIO_ReadPin(btn6_GPIO_Port, btn6_Pin);
+	button_now[6] = HAL_GPIO_ReadPin(btn_7_GPIO_Port, btn_7_Pin);
+	button_now[7] = HAL_GPIO_ReadPin(btn_8_GPIO_Port, btn_8_Pin);
+	button_now[8] = HAL_GPIO_ReadPin(btn_9_GPIO_Port, btn_9_Pin);
+	button_now[9] = HAL_GPIO_ReadPin(btn_10_GPIO_Port, btn_10_Pin);
+	button_now[10] = HAL_GPIO_ReadPin(btn_11_GPIO_Port, btn_11_Pin);
+	button_now[11] = HAL_GPIO_ReadPin(btn_12_GPIO_Port, btn_12_Pin);
+	button_now[12] = HAL_GPIO_ReadPin(btn_13_GPIO_Port, btn_13_Pin);
+	button_now[13] = HAL_GPIO_ReadPin(btn_14_GPIO_Port, btn_14_Pin);
+	button_now[14] = HAL_GPIO_ReadPin(btn_15_GPIO_Port, btn_15_Pin);
+	button_now[15] = HAL_GPIO_ReadPin(btn_16_GPIO_Port, btn_16_Pin);
+	button_now[16] = HAL_GPIO_ReadPin(btn_17_GPIO_Port, btn_17_Pin);
 
 	note_now = get_note(button_now);
 
